@@ -54,13 +54,13 @@ const Preview = React.createClass({
               }
             });
           });
-        `, { stage: 1 }).code;
+        `, { stage: 0 }).code;
       } else {
         return babel.transform(`
           (function (${Object.keys(this.props.scope).join(",")}, mountNode) {
             ${this.props.code}
           });
-        `, { stage: 1 }).code;
+        `, { stage: 0 }).code;
       }
     },
 
@@ -73,7 +73,6 @@ const Preview = React.createClass({
       var mountNode = this.refs.mount;
 
       try {
-
         var scope = [];
 
         for (var s in this.props.scope) {
@@ -106,6 +105,7 @@ const Preview = React.createClass({
             error: err.toString()
           });
         }, 500);
+        console.log(err);
       }
     },
 
