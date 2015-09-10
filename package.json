@@ -1,5 +1,5 @@
 {
-  "name": "component-playground",
+  "name": "@azazdeaz/component-playground",
   "version": "1.0.0",
   "description": "A component for rendering React components with editable source and live preview",
   "keywords": [
