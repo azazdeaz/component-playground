@@ -1,6 +1,6 @@
 {
   "name": "@azazdeaz/component-playground",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A component for rendering React components with editable source and live preview",
   "keywords": [
     "React",
@@ -56,7 +56,7 @@
     "check-cov": "npm run lint && npm run test-cov",
     "check-dev": "npm run lint && npm run test-dev"
   },
-  "dependencies": {
+  "devDependencies": {
     "babel": "^5.5.8",
     "babel-core": "^5.5.8",
     "babel-loader": "^5.3.2",
@@ -64,12 +64,7 @@
     "rimraf": "^2.4.0",
     "style-loader": "~0.8.0",
     "url-loader": "~0.5.5",
-    "webpack": "^1.10.0"
-  },
-  "peerDependencies": {
-    "react": "0.14.x"
-  },
-  "devDependencies": {
+    "webpack": "^1.10.0",
     "babel-eslint": "^3.1.25",
     "chai": "^3.2.0",
     "codemirror": "^5.6.0",
